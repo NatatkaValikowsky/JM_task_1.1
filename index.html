@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 1 - тест на знание верстки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__inner">
+                <div class="modal__left-block">
+                    <img src="img/logo.svg" alt="Company logo">
+                </div>
+                <div class="modal__right-block">
+                    <h3 class="modal__right-block-title">Get iintoo it today</h3>
+                    <p class="modal__right-block-main-descr">There is no charge or obligation upon registration</p>
+                    <div class="modal__social-buttons">
+                        <div class="modal__social-button modal__social-button--facebook">
+                            <img src="img/facebook.svg" alt="Facebook registration button" class="modal__social-button-icon">
+                            <span class="modal__social-button-text">Register with Facebook</span>
+                        </div>
+                        <div class="modal__social-button modal__social-button--linkedin">
+                            <img src="img/linkedin.svg" alt="Linkedin registration button" class="modal__social-button-icon">
+                            <span class="modal__social-button-text">Register with Linkedin</span>
+                        </div>
+                    </div>
+                    <div class="modal__text-or">OR</div>
+                    <form action="" class="modal__registration-form">
+                        <div class="modal__registration-flex-block">
+                            <div class="modal__registration-form-block">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="text">
+                            </div>
+                            <div class="modal__registration-form-block">
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" type="text">
+                            </div>
+                        </div>
+
+                        <h4 class="modal__right-block-subtitle">What type of investor are you?</h4>
+                        <p class="modal__right-block-subtitle-descr">Select the type of investor you are below</p>
+                        <div class="modal__registration-flex-block">
+                            <input id="investor-type-1" type="radio" name="investor-type" value="individual" checked><label for="investor-type-1">Individual</label>
+                            <input id="investor-type-2" type="radio" name="investor-type" value="business" checked><label for="investor-type-2">Business</label>
+                            <input id="investor-type-3" type="radio" name="investor-type" value="IRA" checked><label for="investor-type-3">IRA</label>
+                            <input id="investor-type-4" type="radio" name="investor-type" value="trust" checked><label for="investor-type-4">Trust</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

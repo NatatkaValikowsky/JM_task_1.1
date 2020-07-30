@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap');
+
+body{
+    background-color: #EFF6FF;
+    margin: 0;
+    padding: 0;
+    /*собрать такое все в короткую запись*/
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #2A4A5C;
+}
+
+.modal{
+    width:100vw;
+    height: 100vh;
+}
+
+.modal__wrapper{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__inner{
+    background-color: #fff;
+    width: 1000px;
+    min-height: 650px;
+    display:flex;
+}
+
+.modal__left-block{
+    background: #fff url(img/bg.jpg);
+    background-size: cover;width: 50%;
+}
+
+.modal__left-block img{
+    width: 100px;
+    height:auto;
+    margin: 30px;
+}
+
+.modal__right-block{
+    padding-left: 30px;
+    width:50%;
+}
+
+.modal__right-block-title{
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.modal__social-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.modal__social-button{
+    display:flex;
+    justify-content: left;
+    padding: 7px 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 170px;
+}
+
+.modal__social-button--facebook{
+    background-color: #255A9B;
+}
+
+.modal__social-button--linkedin{
+    background-color: #0076B6;
+    margin-left: 20px;
+}
+
+.modal__social-button-icon{
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.modal__text-or{
+    text-align: center;
+    position: relative;
+    width:250px;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 30px auto;
+}
+
+.modal__text-or:before,
+.modal__text-or:after {
+    display: block;
+    content:"";
+    width: 100px;
+    height:1px;
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 50%;
+}
+
+.modal__text-or:before{
+    left:0;
+}
+
+.modal__text-or:after{
+    right:0;
+}
+
+.modal__registration-flex-block{
+    display:flex;
+}
+
+.modal__registration-form-block{
+    display:block;
+    border-radius:3px;
+    border: 1px solid #EEEEEE;
+    width:200px;
+    padding: 5px;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.modal__registration-form-block:focus-within{
+    border-left: 2px solid #3698FB;
+}
+
+.modal__registration-form-block:last-of-type{
+    margin-left: 20px;
+}
+
+.modal__registration-form-block label,
+.modal__registration-form-block input{
+    display: block;
+    font-size: 10px;
+}
+
+.modal__registration-form-block label{
+    color: #96A5B1;
+    font-weight: 700;
+}
+
+.modal__registration-form-block input{
+    border:none;
+    height:20px;
+}
+
+.modal__right-block-subtitle{
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.modal__right-block input[name="investor-type"]{
+    display:none;
+}
+
+.modal__right-block input[name="investor-type"] + label{
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 40px;
+    position:relative;
+}
+
+.modal__right-block input[name="investor-type"] + label:first-of-type{
+    margin-left: 20px;
+}
+
+.modal__right-block input[name="investor-type"] + label:before{
+    content: "";
+    display:block;
+    width:10px;
+    height:10px;
+    border:1px solid #AFAFAF;
+    position:absolute;
+    left:-20px;
+    top:50%;
+    margin-top: -6px;
+    border-radius: 50%;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+    transition: .1s;
+}
+
+.modal__right-block input[name="investor-type"]:checked + label:before{
+    border:2px solid #3698FB;
+    margin-top: -7px;
+}
