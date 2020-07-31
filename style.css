@@ -48,14 +48,14 @@ body{
 }
 
 .modal__right-block-title{
-    margin-top: 60px;
+    margin-top: 50px;
     font-weight: 700;
 }
 
 .modal__social-buttons{
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .modal__social-button{
@@ -114,6 +114,7 @@ body{
 
 .modal__registration-flex-block{
     display:flex;
+    align-items: center;
 }
 
 .modal__registration-form-block{
@@ -165,8 +166,10 @@ body{
 .modal__right-block input[name="investor-type"] + label{
     font-weight: 700;
     font-size: 14px;
-    margin-left: 40px;
+    margin-left: 50px;
+    margin-bottom: 110px;
     position:relative;
+    margin-top: 15px;
 }
 
 .modal__right-block input[name="investor-type"] + label:first-of-type{
@@ -191,7 +194,88 @@ body{
     transition: .1s;
 }
 
+.modal__right-block input[name="investor-type"] + label:after{
+    content: "i";
+    display: block;
+    width:10px;
+    height:10px;
+    border:1px solid #7B8A92;
+    color: #7B8A92;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 8px;
+    position: absolute;
+    top:50%;
+    right:-17px;
+    font-family: 'Arial', sans-serif;
+    line-height:150%;
+    margin-top: -6px;
+}
+
 .modal__right-block input[name="investor-type"]:checked + label:before{
     border:2px solid #3698FB;
     margin-top: -7px;
+}
+
+.modal__types-of-investors-descr{
+    position:absolute;
+    left: -20px;
+    top: 40px;
+    width: 250px;
+    font-weight: 300;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+input[name="agreement"]{
+    display: none;
+}
+
+.modal__agreement-text{
+    font-size: 12px;
+    margin-left: 20px;
+    color: #7B8A92;
+    position: relative;
+}
+
+
+.modal__agreement-text:before{
+    content:"";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #7B8A92;
+    position: absolute;
+    left: -20px;
+    top:10px;
+    margin-top: -9px;
+}
+
+input[name="agreement"]:checked + label:before{
+    border-color: #3698FB;
+}
+
+input[name="agreement"]:checked + label:after{
+    content: "";
+    display:block;
+    width: 8px;
+    height:4px;
+    border-left:2px solid #3698FB;
+    border-bottom:2px solid #3698FB;
+    position: absolute;
+    top:4px;
+    left:-18px;
+    transform: rotate(-45deg);
+}
+
+.modal__submit-button{
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: #3698FB;
+    color: #fff;
+    padding: 5px 50px;
+    border:none;
+    cursor: pointer;
 }
