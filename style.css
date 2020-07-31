@@ -192,7 +192,8 @@ body{
 .modal__registration-form-block{
     display:block;
     border-radius:3px;
-    border: 1px solid #EEEEEE;
+    outline: 1px solid #EEEEEE;
+    border-left:2px solid transparent;
     width:200px;
     padding: 5px;
     -webkit-transition: 0.2s;
